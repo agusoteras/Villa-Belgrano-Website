@@ -10,10 +10,10 @@ const Header = () => {
              <nav className='nav'>
                  <ul>
                    
-                     <Link to="/inicio"> Inicio  </Link>
+                     <Link to="/"> Inicio  </Link>
                      <Link to="/historia"> Historia</Link>
-                     <Link to="/ubicacion"> Ubicación </Link>
-                     <Link to="/actividades"> Actividades </Link>
+                     <Link to="/atencion"> Atención </Link>
+                     <a href='#body'> Actividades </a>
                      
                  </ul>
              </nav>

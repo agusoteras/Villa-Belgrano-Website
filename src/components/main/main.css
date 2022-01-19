@@ -5,6 +5,163 @@
 }
 
 .info {
-    background-color: thistle;
     margin-right: 15%;
 }
+
+/* ESTILOS SECCION "ATENCION" */ 
+
+.atencion-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: lightcyan;
+}
+.atencion {
+    width: 50%;
+    height: auto;
+    background-color: lightcyan;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    animation-name: atencion;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes atencion {
+    0% {margin-left: -100%; }
+    100% {margin-left: 0%; }
+} 
+.atencion h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.atencion h2:hover {
+    color: green;
+}
+.atencion h5 {
+    margin-bottom: 6%;
+    line-height: 140%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.atencion a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(0, 90, 0);
+}
+.atencion a:hover {
+    color: green;
+}
+.atencion-text {
+    width: 80%;
+    height: auto;
+}
+.sede {
+    width: 50%;
+    height: auto;
+    background-color: lightcyan;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.sede img {
+    width: 70%;
+    height: auto;
+    border: 1px solid lightgreen;
+    animation-name: sede;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.sede img:hover {
+    border: 3px solid lightgreen;
+}
+@keyframes sede {
+    0% {margin-left: -100%; border: none;}
+    100% {margin-left: 0%; border: 1px solid lightgreen;}
+} 
+.atencion {
+    width: 50%;
+    height: auto;
+    background-color: lightcyan;
+    margin-top: 8%;
+}
+
+/* ESTILOS SECCION "HISTORIA" */ 
+
+.history {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightcyan;
+    width: 100%;
+}
+.history-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 2%;
+    animation-name: history;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes history {
+    0% {margin-right: -100%; }
+    100% {margin-right: 0%; }
+} 
+.history-container h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 4%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.history-container h2:hover {
+    color: green;
+}
+
+.img-history-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.history-text {
+    width: 90%;
+}
+.history-text p {
+    line-height: 170%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+}
+.history img {
+    width: 80%;
+    height: auto;
+    border: 1px solid lightgreen;
+    animation-name: park;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.history img:hover {
+    border: 3px solid lightgreen;
+}
+@keyframes park {
+    0% {margin-right: -100%; }
+    100% {margin-right: 0%; }
+} 
