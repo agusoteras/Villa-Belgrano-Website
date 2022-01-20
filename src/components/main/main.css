@@ -8,6 +8,64 @@
     margin-right: 15%;
 }
 
+/* ESTILOS DEL INICIO */
+
+.video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: lightcyan;
+    position: relative;
+    padding-bottom: 6%;
+}
+.inicio-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 4%;
+}
+.image {
+    width: 50%;
+    height: auto;
+    margin-top: 4%;
+    margin-bottom: 8%;
+    
+}
+.image img {
+    border-radius: 90%;
+    width: 70%;
+    height: auto;
+    
+    border: solid 2px rgb(102, 179, 83);
+}
+.informacion {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-bottom: 8%;
+    
+}
+.informacion h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: black;
+    z-index: 20;
+}
+
+
 /* ESTILOS SECCION "ATENCION" */ 
 
 .atencion-container {

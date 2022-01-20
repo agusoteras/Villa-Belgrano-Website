@@ -3,6 +3,7 @@ import "./main.css"
 import logo from "../../assets/logo.png"
 import sede from "../../assets/sede1.png"
 import parque from "../../assets/parque.jpg"
+import video from "../../assets/backvideo.mp4"
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 
 
@@ -69,13 +70,27 @@ Cercano al barrio, se encuentra el Aeropuerto Internacional Ingeniero Ambrosio T
 
 
                    <Route path="/">
-                        <div className='image'>
-                            <img src={logo}></img>
-                        </div>
 
-                        <div className='info'>
-                             <h1>¡Bienvenidos!</h1>
-                        </div>
+                      
+
+                       <div className='inicio'>
+
+                            <video className="video" src ={video} autoPlay loop muted> </video>
+                             
+                             <section className='inicio-section'>
+                                  <div className='image'>
+                                       <img src={logo}></img>
+                                  </div>
+
+                                  <div className='informacion'>
+                                      <h1>¡Juntos por un mejor lugar donde vivir!</h1>
+                                  </div>
+                             </section>
+                             
+                       </div>
+
+                     
+                       
                    </Route>
 
             </Switch>

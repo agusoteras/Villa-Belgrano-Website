@@ -41,3 +41,7 @@
 .header a {
     color: whitesmoke;
 }
+
+.header a:hover {
+    color: green;
+}
