@@ -24,3 +24,16 @@
 .footer-container a:hover {
     color: rgba(0, 128, 0, 0.829);
 }
+
+/* RESPONSIVIDAD */
+
+@media screen and (max-width: 800px) {
+    .footer-container i {font-size: small;}
+    .footer-container a {font-size: small;}
+}
+
+
+@media screen and (max-width: 700px) {
+    .footer-container i {font-size: smaller;}
+    .footer-container a {font-size: smaller;}
+}
