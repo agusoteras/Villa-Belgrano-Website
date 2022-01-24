@@ -53,11 +53,22 @@ padding-left: 0%;
             width: 100%;
         }
         .body h5 {
-            margin-top: 8%;
-            margin-bottom: 8%;
+            margin-top: 12%;
+            margin-bottom: 12%;
             font-size: medium;
             margin-left: 1%;
             margin-right: 1%;
-            margin-bottom: 15%;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        #carouselExampleCaptions {
+            width: 100%;
+        }
+        .body {
+            padding-top: 6%;
+        }
+        .body h5 {
+            margin-bottom: 10%;
         }
     }

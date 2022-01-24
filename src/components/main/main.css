@@ -3,19 +3,11 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .info {
     margin-right: 15%;
 }
 
 /* ESTILOS DEL INICIO */
-
-.video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    opacity: 0.85;
-}
 
 .inicio {
     display: flex;
@@ -23,33 +15,42 @@
     width: 100%;
     height: auto;
     background-color: lightcyan;
-    position: relative;
     padding-bottom: 6%;
 }
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
 .inicio-section {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     align-items: center;
     position: absolute;
-    margin-top: 4%;
+    margin-top: 0%;
 }
 .image {
     width: 50%;
     height: auto;
-    margin-top: 4%;
-    margin-bottom: 8%;
-    
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image img {
     border-radius: 90%;
     width: 70%;
     height: auto;
     border: solid 2px rgb(102, 179, 83);
+    margin-bottom: 20%;
 }
 .informacion {
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +65,14 @@
     font-weight: bolder;
     color: black;
     margin-right: 3%;
+    animation-name: titulo;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
 }
-
+@keyframes titulo {
+    0% {color: rgb(102, 179, 83);}
+    100% {color: black;}
+}
 
 /* ESTILOS SECCION "ATENCION" */ 
 
@@ -90,13 +97,13 @@
     0% {margin-left: -100%; }
     100% {margin-left: 0%; }
 } 
-.atencion h2 {
+.atencion h1 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 4%;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 2px;
 }
-.atencion h2:hover {
+.atencion h1:hover {
     color: green;
 }
 .atencion h5 {
@@ -127,7 +134,7 @@
     margin-bottom: 8%;
 }
 .sede img {
-    width: 70%;
+    width: 75%;
     height: auto;
     border: 1px solid rgb(102, 179, 83);
     animation-name: sede;
@@ -139,8 +146,8 @@
     border: 3px solid rgb(102, 179, 83);
 }
 @keyframes sede {
-    0% {margin-left: -100%; border: none;}
-    100% {margin-left: 0%; border: 1px solid rgb(102, 179, 83);}
+    0% {margin-left: 100%;}
+    100% {margin-left: 0%;}
 } 
 .atencion {
     width: 50%;
@@ -178,13 +185,13 @@
     0% {margin-right: -100%; }
     100% {margin-right: 0%; }
 } 
-.history-container h2 {
+.history-container h1 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 4%;
     font-weight: bold;
     letter-spacing: 2px;
 }
-.history-container h2:hover {
+.history-container h1:hover {
     color: green;
 }
 
@@ -209,7 +216,7 @@
     letter-spacing: 0.5px;
 }
 .history img {
-    width: 80%;
+    width: 85%;
     height: auto;
     border: 1px solid rgb(102, 179, 83);
     animation-name: park;
@@ -221,18 +228,18 @@
     border: 3px solid rgb(102, 179, 83);
 }
 @keyframes park {
-    0% {margin-right: -100%; }
+    0% {margin-right: 100%; }
     100% {margin-right: 0%; }
 } 
 
 
 /* RESPONSIVIDAD */ 
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 840px) {
     .inicio-section {flex-direction: column;}
     .informacion {width: 85%;}
-    .informacion h1 {font-size: xx-large; letter-spacing: 2px;}
-    .image img {width: 95%; height: auto;}
+    .informacion h1 {font-size: x-large; letter-spacing: 2px;}
+    .image img {width: 90%; height: auto;}
     
 .atencion-container {
     flex-direction: column;
@@ -241,11 +248,18 @@
 }
 .atencion {width: 100%; display: flex; justify-content: center; margin-top: 0%;}
 .sede {width: 100%;}
-.sede img {width: 90%;}
+.sede img {width: 75%;}
 
 .history {display: flex; flex-direction: column;}
 .history-container {width: 100%; margin-bottom: 0%;}
 .history-text {width: 80%;}
-.history-container h2 {margin-bottom: 8%; margin-top: 8%; font-size: xx-large;}
+.history-container h1 {margin-bottom: 8%; margin-top: 8%; font-size: xx-large;}
 .history img {display: none;}
+}
+
+
+@media screen and (max-width: 700px) {
+    .inicio {display: flex; flex-direction: column;}
+    .image {align-self: center; margin-top: 5%;}
+    .informacion {display: none;}
 }
